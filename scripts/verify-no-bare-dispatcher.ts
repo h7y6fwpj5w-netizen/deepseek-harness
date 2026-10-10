@@ -92,7 +92,7 @@ function collectDestructuredAgents(pattern: ts.ObjectBindingPattern, agents: Set
 /**
  * Local names bound to an undici agent class, including `import { Agent as X }` renames, the
  * destructured and namespace forms of a dynamic `import('undici')`, and a namespace import's own
- * name so `undici.Agent` is recognised too.
+ * name so `undici.Agent` is recognized too.
  *
  * @param source - the parsed file.
  * @returns agent identifiers and namespace identifiers bound in this file.

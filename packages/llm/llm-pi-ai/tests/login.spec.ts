@@ -134,7 +134,7 @@ describe('pi-ai login flows', () => {
       { type: 'auth_url', url: 'https://auth.example/plain' },
       { type: 'device_code', userCode: 'WXYZ-1234', verificationUri: 'https://device.example' },
       { type: 'progress', message: 'Exchanging the code' },
-      // pi-ai's event union is open; an unrecognised member must still show
+      // pi-ai's event union is open; an unrecognized member must still show
       // the human that something is happening.
       { type: 'quantum-handshake' } as unknown as AuthEvent,
     ]

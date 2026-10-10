@@ -56,7 +56,7 @@ export const PROXY_ENV_NAMES: readonly string[] = [
 /** Proxy URL schemes this package routes through. Everything else is reported, never silently dropped. */
 const SUPPORTED_PROTOCOLS = new Set(['http:', 'https:'])
 
-/** Schemes recognised well enough to name in a diagnostic instead of calling them malformed. */
+/** Schemes recognized well enough to name in a diagnostic instead of calling them malformed. */
 const SOCKS_PROTOCOLS = new Set(['socks:', 'socks4:', 'socks4a:', 'socks5:', 'socks5h:'])
 
 /**
