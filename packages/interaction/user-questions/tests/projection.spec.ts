@@ -81,7 +81,7 @@ const answeredText = JSON.stringify({
 const empty = { active: [], settled: [] }
 
 describe('userQuestions projection fold', () => {
-  it('recognises the timed tool schema by its wait parameter alone', () => {
+  it('recognizes the timed tool schema by its wait parameter alone', () => {
     expect(isTimedAskUserQuestionSchema(timedSchema)).toBe(true)
     expect(isTimedAskUserQuestionSchema(legacySchema)).toBe(false)
     expect(isTimedAskUserQuestionSchema({ ...timedSchema, name: 'bash' })).toBe(false)
